@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receita Conchiglione Gourmet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes pulse-glow {
+        0% {
+          box-shadow: 0 0 15px rgba(255, 170, 0, 0.15), 0 0 30px rgba(255, 170, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        50% {
+          box-shadow: 0 0 20px rgba(220, 38, 38, 0.2), 0 0 40px rgba(220, 38, 38, 0.15), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        100% {
+          box-shadow: 0 0 15px rgba(255, 170, 0, 0.15), 0 0 30px rgba(255, 170, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      body {
+        background-color: #1c0d0d;
+        background-image: radial-gradient(at 0% 0%, hsl(0, 84%, 10%) 0px, transparent 50%),
+                          radial-gradient(at 90% 90%, hsl(30, 89%, 18%) 0px, transparent 50%);
+        color: #e5e7eb; /* Default text color (gray-200) */
+      }
+      
+      .logo-glow {
+        text-shadow: 0 0 8px rgba(255, 193, 7, 0.4),
+                     0 0 12px rgba(239, 68, 68, 0.3);
+      }
+
+      .container-glow {
+        animation: pulse-glow 5s infinite ease-in-out;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
